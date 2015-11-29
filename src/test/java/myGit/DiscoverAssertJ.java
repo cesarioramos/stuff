@@ -14,7 +14,7 @@ public class DiscoverAssertJ {
 	}
 	
 	@Test
-	public void binOperatorSpecification() {
+	public void BINinOperatorSpecification() {
 		BinaryOperator<String> plus = (x, y) -> x + y;
 
 		assertThat(plus.apply("Ces", "ario")).contains("C");
