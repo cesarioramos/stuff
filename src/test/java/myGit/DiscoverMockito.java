@@ -18,6 +18,7 @@ public class DiscoverMockito {
 		// using mock object - it does not throw any "unexpected interaction" exception
 		mockedList.add("one");
 		mockedList.clear();
+		//and more crap
 	
 		// selective, explicit, highly readable verification
 		verify(mockedList).add("one");
