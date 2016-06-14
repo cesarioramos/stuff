@@ -13,7 +13,7 @@ public class DiscoverMockito {
 	public void basicMockito() {
 		// mock creation 
 		List mockedList = mock(List.class);
-		//what a crap
+		//what apple crap
 		//more crappy
 	
 		// using mock object - it does not throw any "unexpected interaction" exception
