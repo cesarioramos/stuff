@@ -13,15 +13,9 @@ public class DiscoverMockito {
 	public void basicMockito() {
 		// mock creation 
 		List mockedList = mock(List.class);
-		//what banana crap
-		//more crappy
-	
 		// using mock object - it does not throw any "unexpected interaction" exception
 		mockedList.add("one");
 		mockedList.clear();
-		//and more crap
-		//bananarama
-	
 		// selective, explicit, highly readable verification
 		verify(mockedList).add("one");
 		verify(mockedList).clear();
@@ -37,6 +31,11 @@ public class DiscoverMockito {
 		button.click();
 		
 		verify(mockedBel).ring();
+	}
+	
+	@Test
+	public void crappyTest() {
+		
 	}
 	
 	@Test
