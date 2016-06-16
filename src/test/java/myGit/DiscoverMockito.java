@@ -46,7 +46,7 @@ public class DiscoverMockito {
 		
 		mockedList.add("Apple");
 		
-		verify(mockedList).add("Apple");
+		verify(mockedList).add("Apples");
 	
 	}
 }
