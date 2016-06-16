@@ -2,8 +2,6 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'checkstyle'
 
-println "applepie"
-
 task wrapper(type: Wrapper) {
     gradleVersion = '2.9'
 }
