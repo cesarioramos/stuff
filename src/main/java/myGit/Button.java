@@ -12,6 +12,7 @@ public class Button implements Clickable {
 	public void doubleClick() {
 		doorbell.ring();
 		doorbell.ring();
+		doorbell.ring();
 	}
 
 }
