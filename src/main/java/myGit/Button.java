@@ -13,6 +13,8 @@ public class Button implements Clickable {
 		doorbell.ring();
 		doorbell.ring();
 		doorbell.ring();
+		doorbell.ring();
+
 	}
 
 }
