@@ -17,7 +17,7 @@ public class HelloLambdas {
 		boe.orElse(4);
 		
 		Predicate<Integer> atLeast5 = x -> x > 5;
-		System.out.println(atLeast5.test(6));
+		System.out.println(atLeast5.test(6) + "banana");
 		
 	}
 }
