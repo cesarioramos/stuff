@@ -43,7 +43,7 @@ public class DiscoverStreams {
 	
 	@Test
 	public void collectIntoAList() {
-		List<String> names = Arrays.asList("Cesario", "Tiago", "Elisa" , "Jacqueline");
+		List<String> names = Arrays.asList("Cesario", "Tiago", "Elisa" , "Jacqueline", "Baboon", "Banana");
 		
 		List<String> shortNames = names
 			    .stream()
@@ -55,8 +55,6 @@ public class DiscoverStreams {
 	}
 
 
-	
-		
 	@Test
 	public void mapAppliesToAllItems() {
 		List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9);
