@@ -47,11 +47,11 @@ public class DiscoverStreams {
 		
 		List<String> shortNames = names
 			    .stream()
-			    .filter(p -> p.length() <= 5)
+			    .filter(p -> p.length() <= 6)
 			    .map(p -> p)
 			    .collect(Collectors.toList());
 		
-		assertThat(shortNames).containsExactly("Tiago", "Elisa");
+		assertThat(shortNames).contains("Tiago", "Elisa", "Banana", "Baboon");
 	}
 
 
