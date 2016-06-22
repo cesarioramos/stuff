@@ -1,4 +1,4 @@
-package myGit;
+package exploreJava8;
 
 public interface Clickable {
 	

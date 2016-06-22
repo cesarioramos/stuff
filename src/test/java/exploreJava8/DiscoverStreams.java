@@ -1,4 +1,4 @@
-package myGit;
+package exploreJava8;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;

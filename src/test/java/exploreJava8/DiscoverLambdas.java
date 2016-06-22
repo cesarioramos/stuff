@@ -1,10 +1,9 @@
-package myGit;
+package exploreJava8;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 import java.lang.Runnable;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -18,6 +17,9 @@ import java.security.*;
 
 import org.junit.Test;
 import org.mockito.Mockito;
+
+import exploreJava8.NoArgumentFunction;
+import exploreJava8.OutputDevice;
 
 public class DiscoverLambdas {
 	

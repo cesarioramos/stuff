@@ -1,4 +1,4 @@
-package myGit;
+package exploreJava8;
 
 import java.util.Optional;
 import java.util.function.BinaryOperator;

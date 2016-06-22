@@ -1,4 +1,4 @@
-package myGit;
+package exploreJava8;
 
 import static org.mockito.Mockito.*;
 
@@ -6,6 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.junit.Test;
+
+import exploreJava8.Button;
+import exploreJava8.DoorBell;
 
 public class DiscoverMockito {
 
