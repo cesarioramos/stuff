@@ -1,11 +1,17 @@
 apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'eclipse'
+apply plugin: 'jetty'
 apply plugin: 'checkstyle'
+
+httpPort = 8888
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.9'
 }
 
+	def tomcat_version = '7.0.57'
+	
 	checkstyle {
 		toolVersion = "6.12"
 	}
@@ -23,6 +29,16 @@ task wrapper(type: Wrapper) {
 
 	dependencies {
 	    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+	    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: tomcat_version
+	    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-logging-juli', version: tomcat_version
+	    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: tomcat_version
+	    compile group: 'org.apache.tomcat', name: 'tomcat-jasper', version: tomcat_version
+	    compile group: 'org.apache.tomcat', name: 'tomcat-jasper-el', version: tomcat_version
+	    compile group: 'org.apache.tomcat', name: 'tomcat-jsp-api', version: tomcat_version
+	    compile group: 'jstl', name: 'jstl', version: '1.2'
+	    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.2.2'
+	    
+	    
 	    testCompile group: 'junit', name: 'junit', version: '4.+'
 	    testCompile 'org.assertj:assertj-core:3.3.0'
 	}
