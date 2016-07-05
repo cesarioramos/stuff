@@ -24,7 +24,7 @@ public class DiscoverAssertJ {
 		String nomes[] = { "Cesario", "Tiago", "Elisa" };
 		
 		assertThat(nomes).doesNotContain("Jacqueline");
-		assertThat(nomes).contains("Tago");
+		assertThat(nomes).contains("Tiago");
 	}
 	
 
