@@ -11,6 +11,8 @@
     <%
             List<Employee> employeeList = (List<Employee>) request.getAttribute("employeeList");            
     %>
+
+    <%= "NULL: " + (employeeList == null ? "true" : "false") %>
     
     <%= "SIZE: " + (employeeList == null ? 0 : employeeList.size()) %>
             
