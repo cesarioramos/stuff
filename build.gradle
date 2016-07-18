@@ -39,18 +39,43 @@ task wrapper(type: Wrapper) {
 	    compile group: 'org.apache.tomcat', name: 'tomcat-jsp-api', version: tomcat_version
 	    compile group: 'jstl', name: 'jstl', version: '1.2'
 	    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.2.2'
-	    
-	    
+	    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'	 
+	    	    
 	    testCompile group: 'junit', name: 'junit', version: '4.+'
 	    testCompile 'org.assertj:assertj-core:3.3.0'
+	    testCompile group: 'com.github.fakemongo', name: 'fongo', version: '2.0.4'
 	}
 
 	test {
-    		testLogging {
+    	testLogging {
         		events "failed"
         		exceptionFormat "short"
     	}
-}
+	}
+	
+		task unitTest(type: Test)  {
+			useJUnit {
+				includeCategories 'tests.UnitTest'
+			}
+    	
+    	testLogging {
+        		events "failed"
+        		exceptionFormat "short"
+    	}
+	}
+	
+	
+	task intTest(type: Test)  {
+			useJUnit {
+				includeCategories 'tests.IntegrationTest'
+			}
+    	
+    	testLogging {
+        		events "failed"
+        		exceptionFormat "short"
+    	}
+	}
+			
 	
 	task checkstyleHtmlMain << {
     ant.xslt(in: "$buildDir/reports/checkstyle/main.xml",

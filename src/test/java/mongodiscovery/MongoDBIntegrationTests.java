@@ -13,6 +13,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+
+import tests.IntegrationTest;
+import tests.UnitTest;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -23,6 +27,7 @@ import com.mongodb.client.result.DeleteResult;
 import static com.mongodb.client.model.Filters.*;
 
 
+@Category(IntegrationTest.class)
 public class MongoDBIntegrationTests {
 
 	MongoClient mongoClient =  null;

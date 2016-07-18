@@ -15,6 +15,8 @@ import java.security.*;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import simplewebapp.Employee;
+
 
 public class DiscoverStreams {
 
@@ -66,6 +68,14 @@ public class DiscoverStreams {
 				.reduce(0, (x,y) -> x+y);
 		
 		assertThat(result).isEqualTo(54);
+	}
+	
+	@Test
+	public void loopList() {
+        for(int emp : Arrays.asList(1,2,4,5)) {
+        	System.out.println(emp);
+        }
+
 	}
 
 }

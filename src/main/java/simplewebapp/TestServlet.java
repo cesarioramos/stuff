@@ -28,6 +28,7 @@ public class TestServlet extends HttpServlet {
         
         List<Employee> employeeList = (List<Employee>) req.getAttribute("employeeList");
         
+        
         int u = (employeeList == null ? 0 : employeeList.size());
         
 //        String nextJSP = "/employee";
