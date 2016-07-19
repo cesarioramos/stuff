@@ -35,6 +35,7 @@ public class MongoDBIntegrationTests {
 	@Before
 	public void mongoClient() {
 		String db = System.getenv("nosqldb");
+		System.out.println("DB Host Address: " + db );
 		if(mongoClient == null)
 			mongoClient = new MongoClient( db , 27017 );
 	}
