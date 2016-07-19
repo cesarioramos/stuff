@@ -77,7 +77,7 @@ task wrapper(type: Wrapper) {
 	}
 			
 	
-	task checkstyleHtmlMain << {
+/*	task checkstyleHtmlMain << {
     ant.xslt(in: "$buildDir/reports/checkstyle/main.xml",
              style: file("${rootDir}/config/checkstyle-noframes-sorted.xsl"),
              out: new File(checkstyleMain.reports.xml.destination.parent, 'main.html'))
@@ -93,4 +93,4 @@ task wrapper(type: Wrapper) {
 
 	checkstyleMain.finalizedBy checkstyleHtmlMain
 	checkstyleTest.finalizedBy checkstyleHtmTest 
-
+*/
