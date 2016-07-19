@@ -20,7 +20,7 @@
             <div class="container">
             <h2>Employees</h2>
             <!--Search Form -->
-            <form action="/employee" method="get" id="seachEmployeeForm" role="form">
+            <form action="/stuff/employee" method="get" id="seachEmployeeForm" role="form">
                 <input type="hidden" id="searchAction" name="searchAction" value="searchByName">
                 <div class="form-group col-xs-5">
                     <input type="text" name="employeeName" id="employeeName" class="form-control" required="true" placeholder="Type the Name or Last Name of the employee"/>                    
