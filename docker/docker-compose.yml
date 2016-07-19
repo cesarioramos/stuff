@@ -1,0 +1,21 @@
+version: '2'
+services:
+ nosqldb:
+  build: ./mongo/
+  ports: 
+   - 27017
+  expose: 
+   - "27017"
+  hostname: "nosqldb"
+
+ dev:
+  build: ./java8-gradle/
+  hostname: "dev"
+  environment:
+  - nosqldb=nosqldb
+  volumes:
+   - /Users/Cesario/Development/PetProject/stuff:/myvol
+  links:
+    - nosqldb
+  depends_on:
+    - nosqldb
