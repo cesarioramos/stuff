@@ -47,13 +47,16 @@ task wrapper(type: Wrapper) {
 	}
 
 	test {
-    	testLogging {
+    	useJUnit {
+				includeCategories 'tests.UnitTest'
+			}
+			testLogging {
         		events "failed"
         		exceptionFormat "short"
     	}
 	}
 	
-		task unitTest(type: Test)  {
+	task unitTest(type: Test)  {
 			useJUnit {
 				includeCategories 'tests.UnitTest'
 			}
