@@ -14,7 +14,7 @@ services:
   environment:
   - nosqldb=nosqldb
   volumes:
-   - /Users/Cesario/Development/PetProject/stuff:/myvol
+   - ~/Development/myPetProject/:/myvol
   links:
     - nosqldb
   depends_on:
